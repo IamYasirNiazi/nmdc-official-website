@@ -187,6 +187,44 @@ a {
   height: 565px;
   position: relative;
 }
+.home-wrapper .main-container .hero .image-wrapper .content {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(20%, -50%);
+  z-index: 99;
+  width: 40%;
+  color: #fff;
+}
+.home-wrapper .main-container .hero .image-wrapper .content .divider {
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+.home-wrapper .main-container .hero .image-wrapper .content span {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+.home-wrapper .main-container .hero .image-wrapper .content h1 {
+  font-weight: 600;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+.home-wrapper .main-container .hero .image-wrapper .content P {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+.home-wrapper .main-container .hero .image-wrapper .content a {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+  background-color: #fff;
+  color: #000;
+}
+.home-wrapper .main-container .hero .image-wrapper .content a:hover {
+  background-color: #004ead;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
 .home-wrapper .main-container .hero .image-wrapper img {
   width: 100%;
   object-fit: cover;
@@ -197,8 +235,8 @@ a {
   transform: translateY(-50%);
 }
 .home-wrapper .main-container .about {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .home-wrapper .main-container .about .container {
   display: flex;
@@ -216,7 +254,6 @@ a {
   border-radius: 20px;
 }
 .home-wrapper .main-container .about .container .row2 {
-  margin-top: 4rem;
   display: flex;
   align-items: center;
 }
@@ -267,6 +304,10 @@ a {
 }
 .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper p {
   padding: 0;
-  margin: p;
+  margin: 0;
+  font-size: 1rem;
   color: #8b8e94;
+}
+.home-wrapper .main-container .about .container .row2 .col3 .main-wrapper a {
+  margin-top: 0.5rem;
 }
