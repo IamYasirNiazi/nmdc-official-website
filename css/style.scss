@@ -474,7 +474,9 @@ a {
         .courses{
             padding-top: 4rem;
             padding-bottom: 4rem;
-            background-color: #F0F9FD;
+            // background-color: #F0F9FD;
+            background: rgb(228,247,255);
+background: linear-gradient(90deg, rgba(228,247,255,1) 0%, rgba(246,252,255,1) 100%);
 
             @media (min-width: 768px) and (max-width: 991px){
                 padding-top: 3rem;
@@ -694,7 +696,10 @@ a {
 
         footer{
             width: 100%;
-            background-color: #003B84;
+            // background-color: #003B84;
+            // background: #003B84;
+            background: rgb(0,100,152);
+            background: linear-gradient(90deg, rgba(0,100,152,1) 0%, rgba(0,141,161,1) 100%);
             padding: 4rem 1rem;
             padding-bottom: 0;
             color: #fff;
