@@ -207,6 +207,13 @@ a {
     transform: translate(13%, -50%);
   }
 }
+@media (max-width: 767px) {
+  .home-wrapper .main-container .hero .image-wrapper .content {
+    width: 80%;
+    top: 35%;
+    transform: translate(13%, -50%);
+  }
+}
 .home-wrapper .main-container .hero .image-wrapper .content .divider {
   width: 50px;
   height: 5px;
@@ -245,7 +252,7 @@ a {
   top: 70%;
   transform: translateY(-50%);
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .home-wrapper .main-container .hero .image-wrapper img {
     top: 0%;
     transform: translateY(0%);
@@ -318,7 +325,7 @@ a {
 .home-wrapper .main-container .about .container .row2 .col3 {
   padding: 0 1.5rem;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .home-wrapper .main-container .about .container .row2 .col3 {
     margin-top: 3rem;
   }
@@ -329,7 +336,7 @@ a {
   align-items: flex-start;
   gap: 0.5rem;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper {
     align-items: center;
     gap: 0.7rem;
@@ -345,12 +352,13 @@ a {
   margin-top: 0.5rem;
 }
 .home-wrapper .main-container .courses {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: #F0F9FD;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .home-wrapper .main-container .courses {
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 }
 .home-wrapper .main-container .courses .container {
@@ -380,7 +388,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border: 1px solid rgba(34, 34, 34, 0.1843137255);
+  border: 1px solid rgba(0, 0, 0, 0.1843137255);
   border-radius: 5px;
 }
 .home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .image {
@@ -403,7 +411,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 .home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .content .date span {
   font-size: 0.9rem;
@@ -414,12 +422,12 @@ a {
   padding: 0.3rem 0;
 }
 .home-wrapper .main-container .hospitals {
-  padding-top: 1rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .home-wrapper .main-container .hospitals {
-    padding-top: 1.2rem;
+    padding-top: 3rem;
   }
 }
 .home-wrapper .main-container .hospitals .container {
@@ -442,12 +450,17 @@ a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .home-wrapper .main-container .hospitals .container .row2 {
+    flex-direction: column;
+  }
+}
 .home-wrapper .main-container .hospitals .container .row2 .col1 {
   padding: 1rem;
 }
 .home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 1rem;
   border: 1px solid rgba(34, 34, 34, 0.1843137255);
   border-radius: 5px;
@@ -456,6 +469,7 @@ a {
   border-radius: 5px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
   width: 100%;
+  flex: 1;
 }
 .home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .image img {
   width: 100%;
@@ -465,20 +479,124 @@ a {
 }
 .home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content {
   padding: 0 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
+  flex: 1;
 }
-.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content .date {
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content div i {
+  padding: 0;
+  margin: 0;
+  margin-top: -0.2rem;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content div span {
+  font-size: 0.8rem;
+}
+.home-wrapper .main-container footer {
+  width: 100%;
+  background-color: #003B84;
+  padding: 4rem 1rem;
+  padding-bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-wrapper .main-container footer .container .row {
   display: flex;
   justify-content: center;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .home-wrapper .main-container footer .container .row .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col1 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col1 .wrapper p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col1 .wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col1 .wrapper div a {
+  color: inherit;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col1 .wrapper div a i {
+  font-size: 1.5rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col2 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col2 .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col2 .wrapper ul li {
+  list-style-type: none;
+  font-size: 0.94rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col2 .wrapper ul li a {
+  color: inherit;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col3 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col3 .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col3 .wrapper ul li {
+  list-style-type: none;
+  font-size: 0.94rem;
+}
+.home-wrapper .main-container footer .container .row .main-wrapper .col3 .wrapper ul li div {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content .date span {
-  font-size: 0.9rem;
+.home-wrapper .main-container footer .container .row .main-wrapper .col3 .wrapper ul li div span {
+  font-size: 0.94rem;
 }
-.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.3rem 0;
+.home-wrapper .main-container footer .copyright {
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.3rem;
+  opacity: 0.7;
+}
+.home-wrapper .main-container footer .copyright .container .row .col .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+@media (max-width: 991px) {
+  .home-wrapper .main-container footer .copyright .container .row .col .wrapper {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+.home-wrapper .main-container footer .copyright .container .row .col .wrapper p {
+  padding: 0;
+  margin: 0;
+}
+.home-wrapper .main-container footer .copyright .container .row .col .wrapper p a {
+  color: inherit;
 }
