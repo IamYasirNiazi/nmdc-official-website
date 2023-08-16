@@ -187,6 +187,11 @@ a {
   height: 565px;
   position: relative;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .hero .image-wrapper {
+    height: 400px;
+  }
+}
 .home-wrapper .main-container .hero .image-wrapper .content {
   position: absolute;
   top: 50%;
@@ -195,6 +200,12 @@ a {
   z-index: 99;
   width: 40%;
   color: #fff;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .hero .image-wrapper .content {
+    width: 60%;
+    transform: translate(13%, -50%);
+  }
 }
 .home-wrapper .main-container .hero .image-wrapper .content .divider {
   width: 50px;
@@ -216,7 +227,7 @@ a {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
 .home-wrapper .main-container .hero .image-wrapper .content a {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
   background-color: #fff;
   color: #000;
 }
@@ -233,6 +244,12 @@ a {
   position: absolute;
   top: 70%;
   transform: translateY(-50%);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .hero .image-wrapper img {
+    top: 0%;
+    transform: translateY(0%);
+  }
 }
 .home-wrapper .main-container .about {
   padding-top: 4rem;
@@ -256,6 +273,11 @@ a {
 .home-wrapper .main-container .about .container .row2 {
   display: flex;
   align-items: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .about .container .row2 {
+    justify-content: center;
+  }
 }
 .home-wrapper .main-container .about .container .row2 .col1 .main-wrapper {
   display: flex;
@@ -296,11 +318,22 @@ a {
 .home-wrapper .main-container .about .container .row2 .col3 {
   padding: 0 1.5rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .about .container .row2 .col3 {
+    margin-top: 3rem;
+  }
+}
 .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper {
+    align-items: center;
+    gap: 0.7rem;
+  }
 }
 .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper p {
   padding: 0;
@@ -310,4 +343,142 @@ a {
 }
 .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper a {
   margin-top: 0.5rem;
+}
+.home-wrapper .main-container .courses {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .courses {
+    padding-top: 1rem;
+  }
+}
+.home-wrapper .main-container .courses .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-wrapper .main-container .courses .container .row1 .col h2 {
+  text-align: center;
+}
+.home-wrapper .main-container .courses .container .row1 .col h2 .divider {
+  width: 200px;
+  height: 5px;
+  background: #003B84;
+  margin: auto;
+  border-radius: 20px;
+}
+.home-wrapper .main-container .courses .container .row2 {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 {
+  padding: 1rem;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid rgba(34, 34, 34, 0.1843137255);
+  border-radius: 5px;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .image {
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  width: 100%;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .image img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .content {
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .content .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .content .date span {
+  font-size: 0.9rem;
+}
+.home-wrapper .main-container .courses .container .row2 .col1 .main-wrapper .content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.3rem 0;
+}
+.home-wrapper .main-container .hospitals {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-wrapper .main-container .hospitals {
+    padding-top: 1.2rem;
+  }
+}
+.home-wrapper .main-container .hospitals .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-wrapper .main-container .hospitals .container .row1 .col h2 {
+  text-align: center;
+}
+.home-wrapper .main-container .hospitals .container .row1 .col h2 .divider {
+  width: 150px;
+  height: 5px;
+  background: #003B84;
+  margin: auto;
+  border-radius: 20px;
+}
+.home-wrapper .main-container .hospitals .container .row2 {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 {
+  padding: 1rem;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid rgba(34, 34, 34, 0.1843137255);
+  border-radius: 5px;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .image {
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  width: 100%;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .image img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center center;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content {
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content .date span {
+  font-size: 0.9rem;
+}
+.home-wrapper .main-container .hospitals .container .row2 .col1 .main-wrapper .content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.3rem 0;
 }
