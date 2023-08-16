@@ -260,7 +260,7 @@ a {
 }
 .home-wrapper .main-container .about {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 .home-wrapper .main-container .about .container {
   display: flex;
@@ -350,6 +350,45 @@ a {
 }
 .home-wrapper .main-container .about .container .row2 .col3 .main-wrapper a {
   margin-top: 0.5rem;
+}
+.home-wrapper .main-container .featured-banner {
+  padding: 2.5rem 1rem;
+  background: rgb(0, 100, 152);
+  background: linear-gradient(0deg, rgb(0, 100, 152) 0%, rgb(0, 117, 180) 100%);
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .home-wrapper .main-container .featured-banner {
+    padding: 3.5rem 1rem;
+  }
+}
+.home-wrapper .main-container .featured-banner .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .home-wrapper .main-container .featured-banner .container .row {
+    gap: 2rem;
+  }
+}
+.home-wrapper .main-container .featured-banner .container .row .col {
+  display: flex;
+  justify-content: center;
+}
+.home-wrapper .main-container .featured-banner .container .row .col .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-wrapper .main-container .featured-banner .container .row .col .main-wrapper h2 {
+  font-size: 3rem;
+}
+.home-wrapper .main-container .featured-banner .container .row .col .main-wrapper p {
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
 }
 .home-wrapper .main-container .courses {
   padding-top: 4rem;
@@ -502,7 +541,7 @@ a {
 .home-wrapper .main-container footer {
   width: 100%;
   background: rgb(0, 100, 152);
-  background: linear-gradient(90deg, rgb(0, 100, 152) 0%, rgb(0, 141, 161) 100%);
+  background: linear-gradient(0deg, rgb(0, 100, 152) 0%, rgb(0, 117, 180) 100%);
   padding: 4rem 1rem;
   padding-bottom: 0;
   color: #fff;
