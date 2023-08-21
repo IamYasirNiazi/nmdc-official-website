@@ -355,21 +355,40 @@ a {
   color: #fff;
   padding: 2rem;
 }
+@media (min-width: 4001px) and (max-width: 10000px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 15vw;
+    transform: translate(0%, 50%);
+  }
+}
+@media (min-width: 3000px) and (max-width: 4000px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 20vw;
+    transform: translate(0%, 48%);
+  }
+}
+@media (min-width: 2800px) and (max-width: 2999px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 25vw;
+    transform: translate(0%, 48%);
+  }
+}
 @media (min-width: 2400px) and (max-width: 2799px) {
   .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
-    width: 50vw;
+    width: 30vw;
     transform: translate(0%, 48%);
   }
 }
 @media (min-width: 2000px) and (max-width: 2399px) {
   .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
-    width: 50vw;
+    width: 35vw;
     transform: translate(0%, 48%);
+    border: 1px solid pink;
   }
 }
 @media (min-width: 1800px) and (max-width: 1999px) {
   .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
-    width: 50vw;
+    width: 40vw;
     transform: translate(0%, 45%);
   }
 }
