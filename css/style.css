@@ -239,7 +239,7 @@ a {
 }
 @media (min-width: 992px) {
   .home-wrapper .main-container header .container .row .col nav ul {
-    gap: 2.5rem;
+    gap: 2rem;
   }
 }
 .home-wrapper .main-container header .container .row .col nav ul li {
