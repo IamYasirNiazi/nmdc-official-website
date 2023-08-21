@@ -340,60 +340,101 @@ a {
     height: 200px;
   }
 }
-.home-wrapper .main-container .hero .image-wrapper .content {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 0%;
-  transform: translate(20%, -50%);
+  transform: translate(0%, 15%);
   z-index: 99;
   width: 40%;
   color: #fff;
+  padding: 2rem;
+}
+@media (min-width: 2400px) and (max-width: 2799px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 50%;
+    transform: translate(0%, 48%);
+  }
+}
+@media (min-width: 2000px) and (max-width: 2399px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 50%;
+    transform: translate(0%, 48%);
+  }
+}
+@media (min-width: 1800px) and (max-width: 1999px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 50%;
+    transform: translate(0%, 45%);
+  }
+}
+@media (min-width: 1400px) and (max-width: 1799px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 45%;
+    transform: translate(0%, 36%);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 50%;
+    transform: translate(0%, 25%);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 55%;
+    transform: translate(0%, 14%);
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .home-wrapper .main-container .hero .image-wrapper .content {
-    width: 60%;
-    transform: translate(13%, -50%);
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 71%;
+    transform: translate(0%, 6%);
   }
 }
 @media (max-width: 767px) {
-  .home-wrapper .main-container .hero .image-wrapper .content {
-    width: 80%;
-    top: 47%;
-    transform: translate(13%, -50%);
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
+    width: 85%;
+    transform: translate(0%, 5%);
   }
 }
 @media (max-width: 575px) {
-  .home-wrapper .main-container .hero .image-wrapper .content {
+  .home-wrapper .main-container .hero .image-wrapper .container .row .col .content {
     display: none;
   }
 }
-.home-wrapper .main-container .hero .image-wrapper .content .divider {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content .divider {
   width: 50px;
   height: 5px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
-.home-wrapper .main-container .hero .image-wrapper .content span {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content span {
   margin-bottom: 0.3rem;
 }
-.home-wrapper .main-container .hero .image-wrapper .content span h5 {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content span h5 {
   font-size: 1.1rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
-.home-wrapper .main-container .hero .image-wrapper .content h1 {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content h1 {
   font-weight: 600;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
-.home-wrapper .main-container .hero .image-wrapper .content P {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content P {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
-.home-wrapper .main-container .hero .image-wrapper .content a {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
   background-color: #fff;
   color: #000;
 }
-.home-wrapper .main-container .hero .image-wrapper .content a:hover {
+.home-wrapper .main-container .hero .image-wrapper .container .row .col .content a:hover {
   background-color: #f3f3f3;
   color: #000000;
 }
