@@ -428,42 +428,56 @@ a {
                                 // height: 100%;
             
                                 @media (min-width: 2400px) and (max-width: 2799px){
-                                    width: 50%;
+                                    // width: 50%;
+                                    width: calc(100vw - 50vw);
                                     transform: translate(0%, 48%);
                                 }
 
                                 @media (min-width: 2000px) and (max-width: 2399px){
-                                    width: 50%;
+                                    // width: 50%;
+                                    width: calc(100vw - 50vw);
                                     transform: translate(0%, 48%);
                                 }
 
                                 @media (min-width: 1800px) and (max-width: 1999px){
-                                    width: 50%;
+                                    // width: 50%;
+                                    width: calc(100vw - 50vw);
                                     transform: translate(0%, 45%);
                                 }
 
                                 @media (min-width: 1400px) and (max-width: 1799px){
-                                    width: 45%;
+                                    // width: 45%;
+                                    width: calc(100vw - 55vw);
                                     transform: translate(0%, 36%);
                                 }
 
                                 @media (min-width: 1200px) and (max-width: 1399px){
-                                    width: 50%;
+                                    // width: 50%;
+                                    width: calc(100vw - 50vw);
                                     transform: translate(0%, 25%);
                                 }
 
-                                @media (min-width: 992px) and (max-width: 1199px){
-                                    width: 55%;
+                                @media (min-width: 1024px) and (max-width: 1199px){
+                                    // width: 60%;
+                                    width: calc(100vw - 40vw);
+                                    transform: translate(0%, 14%);
+                                }
+
+                                @media (min-width: 992px) and (max-width: 1023px){
+                                    // width: 55%;
+                                    width: calc(100vw - 45vw);
                                     transform: translate(0%, 14%);
                                 }
 
                                 @media (min-width: 768px) and (max-width: 991px){
-                                    width: 71%;
+                                    // width: 71%;
+                                    width: calc(100vw - 29vw);
                                     transform: translate(0%, 6%);
                                 }
             
                                 @media (max-width: 767px){
-                                    width: 85%;
+                                    // width: 85%;
+                                    width: calc(100vw - 15vw);
                                     // top: 47%;
                                     transform: translate(0%, 5%);
                                 }
@@ -1425,9 +1439,10 @@ a {
             background-image: url(/images/message-bg.jpg);
             background-color: #000000;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
             background-position: bottom center;
             padding: 0;
+            height: 100%;
 
             .bg-color{
                 background-color: #000000b0;
