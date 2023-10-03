@@ -203,13 +203,53 @@ a {
 .home-wrapper{
 
     .main-container{
+        position: relative;
 
+        .top-nav{
+            background-color: #006498;
+            padding: .7rem;
+
+            .container{
+
+                .row{
+
+                    .col{
+
+                        .main-wrapper{
+                            color: #fff;
+                            font-size: .8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            gap: 1rem;
+
+                            a{
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        
+                            .right{
+
+                                i{
+                                    font-size: 1.1rem;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        
         header{
             position: relative;
+            z-index: 20;
                         
             .container{
 
                 .row{
+                    width: 100%;
 
                     .col{
                         // position: relative;
@@ -252,7 +292,7 @@ a {
                             }
 
                             span{
-                                font-size: 1.3rem;
+                                font-size: 1.2rem;
                                 font-weight: 600;
                                 color: #000;
                                 // letter-spacing: -1px;
@@ -263,7 +303,7 @@ a {
                                 }
 
                                 @media (min-width: 576px) and (max-width: 767px){
-                                    font-size: 1.2rem;
+                                    font-size: 1.15rem;
                                 }
                                 
                                 @media (max-width: 575px){
@@ -300,6 +340,8 @@ a {
                                 display: flex;
                                 align-items: center;
                                 gap: 1.5rem;
+                                position: relative;
+                                z-index: 21;
 
                                 @media (max-width: 767px){
                                     flex-direction: column;
@@ -307,18 +349,92 @@ a {
                                 }
 
                                 @media (min-width: 992px){
-                                    gap: 2rem;
+                                    gap: 1.5rem;
                                 }
+
+                                li.about-menu{
+                                    
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .about-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                                
+                                li.admissions-menu{
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .admissions-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                                    
+
+                                li.departments-menu{
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .departments-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+
             
                                 li{
+                                    border-bottom: 2px solid transparent;
                                     padding: 5px 0;
                                     font-weight: 500;
-                                    font-size: .9rem;
+                                    font-size: .85rem;
+                                    cursor: pointer;
+                                    // position: relative;
+                                    // z-index: 21;
 
                                     @media (min-width: 992px){
-                                        font-size: .95rem;
+                                        font-size: .85rem;
                                     }
-            
+
+                                    .arrow{
+                                       
+                                        &::after{
+                                            width: 1rem;
+                                            height: 1rem;
+                                            content: "";
+                                            background-image: url(/images/arrow-down.svg);
+                                            // background-size: 200px !important;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            // border: 1px solid red;
+                                        }
+                                    }
+
+                                    ul.about-submenu, .admissions-submenu, .departments-submenu{
+                                        z-index: 22;
+                                        position: absolute;
+                                        top: 2.1rem;
+                                        // left: 0;
+                                        // width: 100% !important;
+                                        display: none;
+                                        // display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: .2rem;
+                                        padding: 1rem;
+                                        padding-right: 1.5rem;
+                                        background-color: #fff;
+                                        transition: all .3s ease-in;
+                                        box-shadow: 1px 1px 5px 2px #2222221c;
+                                    }
                                 }
                             }
                         }
@@ -344,6 +460,8 @@ a {
         }
 
         .hero{
+            position: relative;
+            z-index: 10;
             width: 100%;
             display: flex;
             flex-direction: column;

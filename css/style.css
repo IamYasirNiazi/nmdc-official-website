@@ -153,8 +153,35 @@ a {
   }
 }
 
+.home-wrapper .main-container {
+  position: relative;
+}
+.home-wrapper .main-container .top-nav {
+  background-color: #006498;
+  padding: 0.7rem;
+}
+.home-wrapper .main-container .top-nav .container .row .col .main-wrapper {
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.home-wrapper .main-container .top-nav .container .row .col .main-wrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+.home-wrapper .main-container .top-nav .container .row .col .main-wrapper .right i {
+  font-size: 1.1rem;
+}
 .home-wrapper .main-container header {
   position: relative;
+  z-index: 20;
+}
+.home-wrapper .main-container header .container .row {
+  width: 100%;
 }
 .home-wrapper .main-container header .container .row .col {
   width: 100%;
@@ -188,7 +215,7 @@ a {
   }
 }
 .home-wrapper .main-container header .container .row .col a span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #000;
 }
@@ -199,7 +226,7 @@ a {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .home-wrapper .main-container header .container .row .col a span {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
 @media (max-width: 575px) {
@@ -230,6 +257,8 @@ a {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  position: relative;
+  z-index: 21;
 }
 @media (max-width: 767px) {
   .home-wrapper .main-container header .container .row .col nav ul {
@@ -239,18 +268,63 @@ a {
 }
 @media (min-width: 992px) {
   .home-wrapper .main-container header .container .row .col nav ul {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
+.home-wrapper .main-container header .container .row .col nav ul li.about-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.home-wrapper .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+  display: flex !important;
+}
+.home-wrapper .main-container header .container .row .col nav ul li.admissions-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.home-wrapper .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+  display: flex !important;
+}
+.home-wrapper .main-container header .container .row .col nav ul li.departments-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.home-wrapper .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+  display: flex !important;
+}
 .home-wrapper .main-container header .container .row .col nav ul li {
+  border-bottom: 2px solid transparent;
   padding: 5px 0;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .home-wrapper .main-container header .container .row .col nav ul li {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
+}
+.home-wrapper .main-container header .container .row .col nav ul li .arrow::after {
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-image: url(/images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-wrapper .main-container header .container .row .col nav ul li ul.about-submenu, .home-wrapper .main-container header .container .row .col nav ul li .admissions-submenu, .home-wrapper .main-container header .container .row .col nav ul li .departments-submenu {
+  z-index: 22;
+  position: absolute;
+  top: 2.1rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+  box-shadow: 1px 1px 5px 2px rgba(34, 34, 34, 0.1098039216);
 }
 .home-wrapper .main-container header .container .row .col #hamburger {
   position: relative;
@@ -266,6 +340,8 @@ a {
   }
 }
 .home-wrapper .main-container .hero {
+  position: relative;
+  z-index: 10;
   width: 100%;
   display: flex;
   flex-direction: column;
