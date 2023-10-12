@@ -3329,3 +3329,699 @@ a {
 .contact-us .main-container footer .copyright .container .row .col .wrapper p a {
   color: inherit;
 }
+
+.course .main-container {
+  position: relative;
+}
+.course .main-container .top-nav {
+  background-color: #006498;
+  padding: 0.7rem;
+}
+@media (max-width: 767px) {
+  .course .main-container .top-nav {
+    display: none;
+  }
+}
+.course .main-container .top-nav .container .row .col .main-wrapper {
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.course .main-container .top-nav .container .row .col .main-wrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+.course .main-container .top-nav .container .row .col .main-wrapper .right i {
+  font-size: 1.1rem;
+}
+.course .main-container header {
+  position: relative;
+  z-index: 20;
+}
+.course .main-container header .container .row {
+  width: 100%;
+}
+.course .main-container header .container .row .col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.5rem 0.6rem;
+}
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col {
+    padding: 1rem 0.6rem;
+  }
+}
+.course .main-container header .container .row .col a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (max-width: 575px) {
+  .course .main-container header .container .row .col a span:nth-child(2) {
+    display: none;
+  }
+}
+.course .main-container header .container .row .col a img {
+  width: 4.5rem;
+}
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col a img {
+    width: 3rem;
+  }
+}
+.course .main-container header .container .row .col a span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .course .main-container header .container .row .col a span {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .course .main-container header .container .row .col a span {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 575px) {
+  .course .main-container header .container .row .col a span {
+    font-size: 1rem;
+  }
+}
+.course .main-container header .container .row .col a .mbl {
+  display: none;
+}
+@media (max-width: 575px) {
+  .course .main-container header .container .row .col a .mbl {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .course .main-container header .container .row .col a .mbl {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col nav {
+    display: none;
+  }
+}
+.course .main-container header .container .row .col nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 21;
+}
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .course .main-container header .container .row .col nav ul {
+    gap: 1.5rem;
+  }
+}
+.course .main-container header .container .row .col nav ul li.about-menu ul li.active {
+  color: #003B84;
+  font-weight: 500;
+}
+.course .main-container header .container .row .col nav ul li.about-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.course .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+  display: flex !important;
+}
+.course .main-container header .container .row .col nav ul li.admissions-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.course .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+  display: flex !important;
+}
+.course .main-container header .container .row .col nav ul li.departments-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.course .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+  display: flex !important;
+}
+.course .main-container header .container .row .col nav ul li {
+  border-bottom: 2px solid transparent;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .course .main-container header .container .row .col nav ul li {
+    font-size: 0.85rem;
+  }
+}
+.course .main-container header .container .row .col nav ul li .arrow::after {
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-image: url(/images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.course .main-container header .container .row .col nav ul li ul.about-submenu, .course .main-container header .container .row .col nav ul li .admissions-submenu, .course .main-container header .container .row .col nav ul li .departments-submenu {
+  z-index: 22;
+  position: absolute;
+  top: 2rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+  box-shadow: 1px 1px 5px 2px rgba(34, 34, 34, 0.1098039216);
+}
+.course .main-container header .container .row .col #hamburger {
+  position: relative;
+  z-index: 100;
+  font-size: 1.3rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(34, 34, 34, 0.5215686275);
+}
+@media (min-width: 768px) {
+  .course .main-container header .container .row .col #hamburger {
+    display: none;
+  }
+}
+.course .main-container .title-banner {
+  background-image: url(/images/message-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100%;
+}
+.course .main-container .title-banner .bg-color {
+  background-color: rgba(0, 0, 0, 0.7960784314);
+  width: 100%;
+  height: 100%;
+  padding: 7rem 1rem;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .course .main-container .title-banner .bg-color {
+    padding: 4rem 1rem;
+  }
+}
+.course .main-container .title-banner .bg-color .container .row .col .text-banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.course .main-container .title-banner .bg-color .container .row .col .text-banner-wrapper div {
+  width: 15%;
+  height: 4px;
+  border-radius: 0.5rem;
+  background-color: #006498;
+}
+.course .main-container .course-wrapper {
+  padding: 3rem 1rem;
+  margin-top: 0.4rem;
+}
+.course .main-container .course-wrapper .container .row .col .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.course .main-container .course-wrapper .container .row .col .main-wrapper .vision ul, .course .main-container .course-wrapper .container .row .col .main-wrapper .vision ol, .course .main-container .course-wrapper .container .row .col .main-wrapper .mission ul, .course .main-container .course-wrapper .container .row .col .main-wrapper .mission ol {
+  margin-left: 2rem;
+}
+.course .main-container footer {
+  width: 100%;
+  background: rgb(0, 100, 152);
+  background: linear-gradient(0deg, rgb(0, 100, 152) 0%, rgb(0, 117, 180) 100%);
+  padding: 4rem 1rem;
+  padding-bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course .main-container footer .container .row {
+  display: flex;
+  justify-content: center;
+}
+.course .main-container footer .container .row .main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .course .main-container footer .container .row .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.course .main-container footer .container .row .main-wrapper .col1 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col1 .wrapper p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.course .main-container footer .container .row .main-wrapper .col1 .wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.course .main-container footer .container .row .main-wrapper .col1 .wrapper div a {
+  color: inherit;
+}
+.course .main-container footer .container .row .main-wrapper .col1 .wrapper div a i {
+  font-size: 1.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col2 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col2 .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col2 .wrapper ul li {
+  list-style-type: none;
+  font-size: 0.94rem;
+}
+.course .main-container footer .container .row .main-wrapper .col2 .wrapper ul li a {
+  color: inherit;
+}
+.course .main-container footer .container .row .main-wrapper .col3 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col3 .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col3 .wrapper ul li {
+  list-style-type: none;
+  font-size: 0.94rem;
+}
+.course .main-container footer .container .row .main-wrapper .col3 .wrapper ul li div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.course .main-container footer .container .row .main-wrapper .col3 .wrapper ul li div span {
+  font-size: 0.94rem;
+}
+.course .main-container footer .copyright {
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.3rem;
+  opacity: 0.7;
+}
+.course .main-container footer .copyright .container .row .col .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+@media (max-width: 991px) {
+  .course .main-container footer .copyright .container .row .col .wrapper {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+.course .main-container footer .copyright .container .row .col .wrapper p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .course .main-container footer .copyright .container .row .col .wrapper p {
+    font-size: 0.8rem;
+  }
+}
+.course .main-container footer .copyright .container .row .col .wrapper p a {
+  color: inherit;
+}
+
+.downloads .main-container {
+  position: relative;
+}
+.downloads .main-container .top-nav {
+  background-color: #006498;
+  padding: 0.7rem;
+}
+@media (max-width: 767px) {
+  .downloads .main-container .top-nav {
+    display: none;
+  }
+}
+.downloads .main-container .top-nav .container .row .col .main-wrapper {
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.downloads .main-container .top-nav .container .row .col .main-wrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+.downloads .main-container .top-nav .container .row .col .main-wrapper .right i {
+  font-size: 1.1rem;
+}
+.downloads .main-container header {
+  position: relative;
+  z-index: 20;
+}
+.downloads .main-container header .container .row {
+  width: 100%;
+}
+.downloads .main-container header .container .row .col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.5rem 0.6rem;
+}
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col {
+    padding: 1rem 0.6rem;
+  }
+}
+.downloads .main-container header .container .row .col a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (max-width: 575px) {
+  .downloads .main-container header .container .row .col a span:nth-child(2) {
+    display: none;
+  }
+}
+.downloads .main-container header .container .row .col a img {
+  width: 4.5rem;
+}
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col a img {
+    width: 3rem;
+  }
+}
+.downloads .main-container header .container .row .col a span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .downloads .main-container header .container .row .col a span {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .downloads .main-container header .container .row .col a span {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 575px) {
+  .downloads .main-container header .container .row .col a span {
+    font-size: 1rem;
+  }
+}
+.downloads .main-container header .container .row .col a .mbl {
+  display: none;
+}
+@media (max-width: 575px) {
+  .downloads .main-container header .container .row .col a .mbl {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .downloads .main-container header .container .row .col a .mbl {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col nav {
+    display: none;
+  }
+}
+.downloads .main-container header .container .row .col nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 21;
+}
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .downloads .main-container header .container .row .col nav ul {
+    gap: 1.5rem;
+  }
+}
+.downloads .main-container header .container .row .col nav ul li.about-menu ul li.active {
+  color: #003B84;
+  font-weight: 500;
+}
+.downloads .main-container header .container .row .col nav ul li.about-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.downloads .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+  display: flex !important;
+}
+.downloads .main-container header .container .row .col nav ul li.admissions-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.downloads .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+  display: flex !important;
+}
+.downloads .main-container header .container .row .col nav ul li.departments-menu:hover {
+  border-bottom: 2px solid #004ead;
+  transition: all 0.2s ease-in;
+}
+.downloads .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+  display: flex !important;
+}
+.downloads .main-container header .container .row .col nav ul li {
+  border-bottom: 2px solid transparent;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .downloads .main-container header .container .row .col nav ul li {
+    font-size: 0.85rem;
+  }
+}
+.downloads .main-container header .container .row .col nav ul li .arrow::after {
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-image: url(/images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.downloads .main-container header .container .row .col nav ul li ul.about-submenu, .downloads .main-container header .container .row .col nav ul li .admissions-submenu, .downloads .main-container header .container .row .col nav ul li .departments-submenu {
+  z-index: 22;
+  position: absolute;
+  top: 2rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+  box-shadow: 1px 1px 5px 2px rgba(34, 34, 34, 0.1098039216);
+}
+.downloads .main-container header .container .row .col #hamburger {
+  position: relative;
+  z-index: 100;
+  font-size: 1.3rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(34, 34, 34, 0.5215686275);
+}
+@media (min-width: 768px) {
+  .downloads .main-container header .container .row .col #hamburger {
+    display: none;
+  }
+}
+.downloads .main-container .title-banner {
+  background-image: url(/images/message-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100%;
+}
+.downloads .main-container .title-banner .bg-color {
+  background-color: rgba(0, 0, 0, 0.7960784314);
+  width: 100%;
+  height: 100%;
+  padding: 7rem 1rem;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .downloads .main-container .title-banner .bg-color {
+    padding: 4rem 1rem;
+  }
+}
+.downloads .main-container .title-banner .bg-color .container .row .col .text-banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.downloads .main-container .title-banner .bg-color .container .row .col .text-banner-wrapper div {
+  width: 15%;
+  height: 4px;
+  border-radius: 0.5rem;
+  background-color: #006498;
+}
+.downloads .main-container .course-wrapper {
+  padding: 3rem 1rem;
+  margin-top: 0.4rem;
+}
+.downloads .main-container .course-wrapper .container .row .col .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.downloads .main-container .course-wrapper .container .row .col .main-wrapper .vision ul, .downloads .main-container .course-wrapper .container .row .col .main-wrapper .vision ol, .downloads .main-container .course-wrapper .container .row .col .main-wrapper .mission ul, .downloads .main-container .course-wrapper .container .row .col .main-wrapper .mission ol {
+  margin-left: 2rem;
+}
+.downloads .main-container footer {
+  width: 100%;
+  background: rgb(0, 100, 152);
+  background: linear-gradient(0deg, rgb(0, 100, 152) 0%, rgb(0, 117, 180) 100%);
+  padding: 4rem 1rem;
+  padding-bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.downloads .main-container footer .container .row {
+  display: flex;
+  justify-content: center;
+}
+.downloads .main-container footer .container .row .main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .downloads .main-container footer .container .row .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.downloads .main-container footer .container .row .main-wrapper .col1 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col1 .wrapper p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.downloads .main-container footer .container .row .main-wrapper .col1 .wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col1 .wrapper div a {
+  color: inherit;
+}
+.downloads .main-container footer .container .row .main-wrapper .col1 .wrapper div a i {
+  font-size: 1.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col2 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col2 .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col2 .wrapper ul li {
+  list-style-type: none;
+  font-size: 0.94rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col2 .wrapper ul li a {
+  color: inherit;
+}
+.downloads .main-container footer .container .row .main-wrapper .col3 .wrapper h4 {
+  margin-bottom: 1.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col3 .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col3 .wrapper ul li {
+  list-style-type: none;
+  font-size: 0.94rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col3 .wrapper ul li div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.downloads .main-container footer .container .row .main-wrapper .col3 .wrapper ul li div span {
+  font-size: 0.94rem;
+}
+.downloads .main-container footer .copyright {
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.3rem;
+  opacity: 0.7;
+}
+.downloads .main-container footer .copyright .container .row .col .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+@media (max-width: 991px) {
+  .downloads .main-container footer .copyright .container .row .col .wrapper {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+.downloads .main-container footer .copyright .container .row .col .wrapper p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .downloads .main-container footer .copyright .container .row .col .wrapper p {
+    font-size: 0.8rem;
+  }
+}
+.downloads .main-container footer .copyright .container .row .col .wrapper p a {
+  color: inherit;
+}

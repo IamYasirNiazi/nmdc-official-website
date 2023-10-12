@@ -5529,4 +5529,1079 @@ a {
 }
 
 
+.course{
+
+    .main-container{
+        position: relative;
+
+        .top-nav{
+            background-color: #006498;
+            padding: .7rem;
+
+            @media (max-width: 767px){
+                display: none;
+            }
+
+            .container{
+
+                .row{
+
+                    .col{
+
+                        .main-wrapper{
+                            color: #fff;
+                            font-size: .8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            gap: 1rem;
+
+                            a{
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        
+                            .right{
+
+                                i{
+                                    font-size: 1.1rem;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        
+        header{
+            position: relative;
+            z-index: 20;
+                        
+            .container{
+
+                .row{
+                    width: 100%;
+
+                    .col{
+                        // position: relative;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1.5rem;
+                        padding: .5rem .6rem;
+
+                        @media (max-width: 767px){
+                            padding: 1rem .6rem;
+                        }
+
+
+                        a{
+                            // flex-basis: 0;
+                            // flex-grow: 1;
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+
+                            @media (max-width: 767px){
+                                // flex-grow: 1;
+                                // order: 2;
+                            }
+
+                            span:nth-child(2){
+                                @media (max-width: 575px){
+                                    display: none;
+                                }
+                            }
+            
+                            img{
+                                width: 4.5rem;
+
+                                @media (max-width: 767px){
+                                    width: 3rem;
+                                }
+                            }
+
+                            span{
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                color: #000;
+                                // letter-spacing: -1px;
+
+                                
+                                @media (min-width: 768px) and (max-width: 991px){
+                                    display: none;
+                                }
+
+                                @media (min-width: 576px) and (max-width: 767px){
+                                    font-size: 1.15rem;
+                                }
+                                
+                                @media (max-width: 575px){
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            .mbl{
+                                display: none;
+
+                                @media (max-width: 575px){
+                                    display: flex;
+                                }
+
+                                @media (min-width: 768px) and (max-width: 991px){
+                                    display: flex;
+                                }
+                            }
+                        }
+            
+            
+                        nav{
+                            // flex-grow: 2;
+                            // flex-basis: 0;
+
+                            @media (max-width: 767px){
+                                // flex-grow: 1;
+                                // order: 1;
+                                display: none;
+                            }
+
+                            ul{
+                                list-style-type: none;
+                                display: flex;
+                                align-items: center;
+                                gap: 1.5rem;
+                                position: relative;
+                                z-index: 21;
+
+                                @media (max-width: 767px){
+                                    flex-direction: column;
+                                    gap: .5rem;
+                                }
+
+                                @media (min-width: 992px){
+                                    gap: 1.5rem;
+                                }
+
+
+                                li.about-menu{
+
+                                    ul{
+                                        li.active{
+                                            color: #003B84;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .about-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                                
+                                li.admissions-menu{
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .admissions-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                                    
+
+                                li.departments-menu{
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .departments-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+
+            
+                                li{
+                                    border-bottom: 2px solid transparent;
+                                    padding: 5px 0;
+                                    font-weight: 500;
+                                    font-size: .85rem;
+                                    cursor: pointer;
+                                    // position: relative;
+                                    // z-index: 21;
+
+                                    @media (min-width: 992px){
+                                        font-size: .85rem;
+                                    }
+
+                                    .arrow{
+                                       
+                                        &::after{
+                                            width: 1rem;
+                                            height: 1rem;
+                                            content: "";
+                                            background-image: url(/images/arrow-down.svg);
+                                            // background-size: 200px !important;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            // border: 1px solid red;
+                                        }
+                                    }
+
+                                    ul.about-submenu, .admissions-submenu, .departments-submenu{
+                                        z-index: 22;
+                                        position: absolute;
+                                        top: 2rem;
+                                        // left: 0;
+                                        // width: 100% !important;
+                                        display: none;
+                                        // display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: .2rem;
+                                        padding: 1rem;
+                                        padding-right: 1.5rem;
+                                        background-color: #fff;
+                                        transition: all .3s ease-in;
+                                        box-shadow: 1px 1px 5px 2px #2222221c;
+                                    }
+                                }
+                            }
+                        }
+
+                        #hamburger{
+                            position: relative;
+                            z-index: 100;
+                            font-size: 1.3rem;
+                            padding: 0.15rem 0.45rem;
+                            border-radius: 0.3rem;
+                            border: 1px solid rgba(34, 34, 34, 0.5215686275);
+                            // flex-grow: 1;
+                            // flex-basis: 0;
+                            // order: 3;
+
+                            @media (min-width: 768px){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+
+        .title-banner{
+            background-image: url(/images/message-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            height: 100%;
+
+            .bg-color{
+                background-color: #000000cb;
+                width: 100%;
+                height: 100%;
+                padding: 7rem 1rem;
+                color: #fff;
+
+                @media (max-width: 767px){
+                    padding: 4rem 1rem;
+                }
+
+                .container{
+    
+                    .row{
+    
+                        .col{
+                            .text-banner-wrapper{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: .3rem;
+    
+                                h1{
+
+                                }
+
+                                div{
+                                    width: 15%;
+                                    height: 4px;
+                                    border-radius: .5rem;
+                                    background-color: #006498;
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+
+        .course-wrapper{
+            padding: 3rem 1rem;
+            margin-top: .4rem;
+
+            .container{
+
+                .row{
+
+                    .col{
+
+                        .main-wrapper{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5rem;
+
+                            .vision, .mission{
+
+                                h4{
+    
+                                }
+
+                                p{
+
+                                }
+    
+                                ul,ol{
+                                    margin-left: 2rem;
+
+                                    li{
+
+                                    }
+                                }
+                            }
+
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        footer{
+            width: 100%;
+            // background-color: #003B84;
+            // background: #003B84;
+            background: rgb(0,100,152);
+            background: linear-gradient(0deg, rgba(0,100,152,1) 0%, rgb(0, 117, 180) 100%);
+            padding: 4rem 1rem;
+            padding-bottom: 0;
+            color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .container{
+
+                .row{
+                    display: flex;
+                    justify-content: center;
+
+                    .main-wrapper{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        @media (max-width: 767px){
+                            flex-direction: column;
+                            gap: 2rem;
+                        }
+
+                        .col{
+
+                        }
+
+                        .col1{
+                            .wrapper{
+
+                                h4{
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                p{
+                                    font-size: .9rem;
+                                    line-height: 2;
+
+                                }
+
+                                div{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: .6rem;
+
+                                    a{
+                                        color: inherit;
+
+                                        i{
+                                            font-size: 1.5rem;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .col2{
+
+                            .wrapper{
+
+                                h4{
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: .5rem;
+
+                                    li{
+                                        list-style-type: none;
+                                        font-size: .94rem;
+
+                                        a{
+                                            color: inherit;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .col3{
+
+                            .wrapper{
+
+                                h4{
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: .5rem;
+
+                                    li{
+                                        list-style-type: none;
+                                        font-size: .94rem;
+
+                                        div{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: .5rem;
+
+                                            i{
+
+                                            }
+
+                                            span{
+                                                font-size: .94rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .copyright{
+                padding: 1.2rem 1rem;
+                margin-bottom: 1.3rem;
+                opacity: .7;
+
+                .container{
+
+                    .row{
+
+                        .col{
+
+                            .wrapper{
+                                display: flex;
+                                align-items: center;
+                                gap: .3rem;
+
+                                @media (max-width: 991px){
+                                    flex-direction: column;
+                                    gap: .3rem;
+                                    
+                                }
+
+                                p{
+                                    padding: 0;
+                                    margin: 0;
+                                    text-align: center;
+
+                                    @media (max-width: 575px){
+                                        font-size: .8rem;
+                                    }
+
+                                    a{
+                                        color: inherit;
+                                    }
+
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.downloads{
+
+    .main-container{
+        position: relative;
+
+        .top-nav{
+            background-color: #006498;
+            padding: .7rem;
+
+            @media (max-width: 767px){
+                display: none;
+            }
+
+            .container{
+
+                .row{
+
+                    .col{
+
+                        .main-wrapper{
+                            color: #fff;
+                            font-size: .8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            gap: 1rem;
+
+                            a{
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                        
+                            .right{
+
+                                i{
+                                    font-size: 1.1rem;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        
+        header{
+            position: relative;
+            z-index: 20;
+                        
+            .container{
+
+                .row{
+                    width: 100%;
+
+                    .col{
+                        // position: relative;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1.5rem;
+                        padding: .5rem .6rem;
+
+                        @media (max-width: 767px){
+                            padding: 1rem .6rem;
+                        }
+
+
+                        a{
+                            // flex-basis: 0;
+                            // flex-grow: 1;
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+
+                            @media (max-width: 767px){
+                                // flex-grow: 1;
+                                // order: 2;
+                            }
+
+                            span:nth-child(2){
+                                @media (max-width: 575px){
+                                    display: none;
+                                }
+                            }
+            
+                            img{
+                                width: 4.5rem;
+
+                                @media (max-width: 767px){
+                                    width: 3rem;
+                                }
+                            }
+
+                            span{
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                color: #000;
+                                // letter-spacing: -1px;
+
+                                
+                                @media (min-width: 768px) and (max-width: 991px){
+                                    display: none;
+                                }
+
+                                @media (min-width: 576px) and (max-width: 767px){
+                                    font-size: 1.15rem;
+                                }
+                                
+                                @media (max-width: 575px){
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            .mbl{
+                                display: none;
+
+                                @media (max-width: 575px){
+                                    display: flex;
+                                }
+
+                                @media (min-width: 768px) and (max-width: 991px){
+                                    display: flex;
+                                }
+                            }
+                        }
+            
+            
+                        nav{
+                            // flex-grow: 2;
+                            // flex-basis: 0;
+
+                            @media (max-width: 767px){
+                                // flex-grow: 1;
+                                // order: 1;
+                                display: none;
+                            }
+
+                            ul{
+                                list-style-type: none;
+                                display: flex;
+                                align-items: center;
+                                gap: 1.5rem;
+                                position: relative;
+                                z-index: 21;
+
+                                @media (max-width: 767px){
+                                    flex-direction: column;
+                                    gap: .5rem;
+                                }
+
+                                @media (min-width: 992px){
+                                    gap: 1.5rem;
+                                }
+
+
+                                li.about-menu{
+
+                                    ul{
+                                        li.active{
+                                            color: #003B84;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .about-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                                
+                                li.admissions-menu{
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .admissions-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                                    
+
+                                li.departments-menu{
+                                    &:hover{
+
+                                        border-bottom: 2px solid #004ead;
+                                        transition: all .2s ease-in;
+
+                                        .departments-submenu{
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+
+            
+                                li{
+                                    border-bottom: 2px solid transparent;
+                                    padding: 5px 0;
+                                    font-weight: 500;
+                                    font-size: .85rem;
+                                    cursor: pointer;
+                                    // position: relative;
+                                    // z-index: 21;
+
+                                    @media (min-width: 992px){
+                                        font-size: .85rem;
+                                    }
+
+                                    .arrow{
+                                       
+                                        &::after{
+                                            width: 1rem;
+                                            height: 1rem;
+                                            content: "";
+                                            background-image: url(/images/arrow-down.svg);
+                                            // background-size: 200px !important;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            // border: 1px solid red;
+                                        }
+                                    }
+
+                                    ul.about-submenu, .admissions-submenu, .departments-submenu{
+                                        z-index: 22;
+                                        position: absolute;
+                                        top: 2rem;
+                                        // left: 0;
+                                        // width: 100% !important;
+                                        display: none;
+                                        // display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: .2rem;
+                                        padding: 1rem;
+                                        padding-right: 1.5rem;
+                                        background-color: #fff;
+                                        transition: all .3s ease-in;
+                                        box-shadow: 1px 1px 5px 2px #2222221c;
+                                    }
+                                }
+                            }
+                        }
+
+                        #hamburger{
+                            position: relative;
+                            z-index: 100;
+                            font-size: 1.3rem;
+                            padding: 0.15rem 0.45rem;
+                            border-radius: 0.3rem;
+                            border: 1px solid rgba(34, 34, 34, 0.5215686275);
+                            // flex-grow: 1;
+                            // flex-basis: 0;
+                            // order: 3;
+
+                            @media (min-width: 768px){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+
+        .title-banner{
+            background-image: url(/images/message-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            height: 100%;
+
+            .bg-color{
+                background-color: #000000cb;
+                width: 100%;
+                height: 100%;
+                padding: 7rem 1rem;
+                color: #fff;
+
+                @media (max-width: 767px){
+                    padding: 4rem 1rem;
+                }
+
+                .container{
+    
+                    .row{
+    
+                        .col{
+                            .text-banner-wrapper{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: .3rem;
+    
+                                h1{
+
+                                }
+
+                                div{
+                                    width: 15%;
+                                    height: 4px;
+                                    border-radius: .5rem;
+                                    background-color: #006498;
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+
+        .course-wrapper{
+            padding: 3rem 1rem;
+            margin-top: .4rem;
+
+            .container{
+
+                .row{
+
+                    .col{
+
+                        .main-wrapper{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5rem;
+
+                            .vision, .mission{
+
+                                h4{
+    
+                                }
+
+                                p{
+
+                                }
+    
+                                ul,ol{
+                                    margin-left: 2rem;
+
+                                    li{
+
+                                    }
+                                }
+                            }
+
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        footer{
+            width: 100%;
+            // background-color: #003B84;
+            // background: #003B84;
+            background: rgb(0,100,152);
+            background: linear-gradient(0deg, rgba(0,100,152,1) 0%, rgb(0, 117, 180) 100%);
+            padding: 4rem 1rem;
+            padding-bottom: 0;
+            color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .container{
+
+                .row{
+                    display: flex;
+                    justify-content: center;
+
+                    .main-wrapper{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        @media (max-width: 767px){
+                            flex-direction: column;
+                            gap: 2rem;
+                        }
+
+                        .col{
+
+                        }
+
+                        .col1{
+                            .wrapper{
+
+                                h4{
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                p{
+                                    font-size: .9rem;
+                                    line-height: 2;
+
+                                }
+
+                                div{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: .6rem;
+
+                                    a{
+                                        color: inherit;
+
+                                        i{
+                                            font-size: 1.5rem;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .col2{
+
+                            .wrapper{
+
+                                h4{
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: .5rem;
+
+                                    li{
+                                        list-style-type: none;
+                                        font-size: .94rem;
+
+                                        a{
+                                            color: inherit;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .col3{
+
+                            .wrapper{
+
+                                h4{
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: .5rem;
+
+                                    li{
+                                        list-style-type: none;
+                                        font-size: .94rem;
+
+                                        div{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: .5rem;
+
+                                            i{
+
+                                            }
+
+                                            span{
+                                                font-size: .94rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .copyright{
+                padding: 1.2rem 1rem;
+                margin-bottom: 1.3rem;
+                opacity: .7;
+
+                .container{
+
+                    .row{
+
+                        .col{
+
+                            .wrapper{
+                                display: flex;
+                                align-items: center;
+                                gap: .3rem;
+
+                                @media (max-width: 991px){
+                                    flex-direction: column;
+                                    gap: .3rem;
+                                    
+                                }
+
+                                p{
+                                    padding: 0;
+                                    margin: 0;
+                                    text-align: center;
+
+                                    @media (max-width: 575px){
+                                        font-size: .8rem;
+                                    }
+
+                                    a{
+                                        color: inherit;
+                                    }
+
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
 
