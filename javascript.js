@@ -55,7 +55,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#messageSlider").owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 30,
      nav:false,
     center: true,
     stagePadding: 0,
