@@ -1869,10 +1869,13 @@ a {
     
                                         p{
                                             opacity: .9;
+                                            font-size: .9rem;
                                         }
     
                                         h6{
                                             opacity: .8;
+                                            font-size: .87rem;
+                                            font-weight: 600;
 
                                             @media (max-width: 575px){
                                             font-size: .85rem;
@@ -5855,29 +5858,67 @@ a {
 
                 .row{
 
-                    .col{
+                    .col1{
 
                         .main-wrapper{
                             display: flex;
                             flex-direction: column;
                             gap: 1.5rem;
 
-                            .vision, .mission{
+                            .college{
 
-                                h4{
+                                h2{
+    
+                                }
+
+                                p{
+                                    margin-top: 1rem;
+                                    text-align: justify;
+                                    padding: 0 .3rem;
+
+                                }
+                            }
+
+                        }
+                        
+                    }
+
+                    .col2{
+
+                        .main-wrapper{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5rem;
+
+                            .image{
+                                width: 100%;
+
+                                img{
+                                    height: 30rem;
+                                    width: 100%;
+                                    object-fit: cover;
+                                    border-radius: .5rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .col3{
+                        margin-top: 2rem;
+
+                        .main-wrapper{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5rem;
+
+                            .college{
+
+                                h3{
     
                                 }
 
                                 p{
 
-                                }
-    
-                                ul,ol{
-                                    margin-left: 2rem;
-
-                                    li{
-
-                                    }
                                 }
                             }
 
@@ -6385,44 +6426,113 @@ a {
             }
         }
 
-        .course-wrapper{
-            padding: 3rem 1rem;
-            margin-top: .4rem;
+        .faq{
+            margin-bottom: 2rem;
+            
+            .main-wrapper{
 
-            .container{
+                .container{
 
-                .row{
+                    .row1{
+                        padding: 1rem 0rem;
+                        padding-top: 2rem;
 
-                    .col{
+                        .col{
 
-                        .main-wrapper{
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1.5rem;
+                            .wrapper{
 
-                            .vision, .mission{
+                                h1{
 
-                                h4{
-    
                                 }
 
                                 p{
+                                    font-size: 1.1rem;
 
-                                }
-    
-                                ul,ol{
-                                    margin-left: 2rem;
-
-                                    li{
-
+                                    span{
+                                        font-weight: 500;
                                     }
                                 }
+                                
                             }
-
                         }
-                        
+                    }
+
+                    .row2{
+                        // padding: 1rem 0rem;
+
+                        .col{
+
+                            .wrapper{
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+
+                                @media (max-width:767px){
+                                    flex-wrap: wrap;
+                                    // justify-content: center;
+                                }
+
+                                .button.active {
+                                background-color: #df0000;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .row3{
+                        margin-top: 2rem;
+
+                        .col{
+
+                            .wrapper{
+
+                                .data-container {
+                                    // display: none;
+                                    margin-top: 10px;
+
+                                    .main-wrapper{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 1.5rem;
+            
+                                        h3{
+            
+                                        }
+            
+                                        div{
+            
+                                            h5{
+            
+                                            }
+            
+                                            p{
+            
+                                            }
+            
+                                            ul,ol{
+                                                margin-left: 2rem;
+            
+                                                li.eligible{
+                                                    font-weight: 600;
+                                                }
+            
+                                                li{
+            
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                  }
+
+                                  .data{
+                                    display: none;
+                                  }
+                            }
+                        }
                     }
                 }
+
             }
         }
 

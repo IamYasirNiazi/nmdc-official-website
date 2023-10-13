@@ -1349,9 +1349,12 @@ a {
 }
 .home-wrapper .main-container .message-wrapper .bg-color .container .row .col .main-wrapper .message .content p {
   opacity: 0.9;
+  font-size: 0.9rem;
 }
 .home-wrapper .main-container .message-wrapper .bg-color .container .row .col .main-wrapper .message .content h6 {
   opacity: 0.8;
+  font-size: 0.87rem;
+  font-weight: 600;
 }
 @media (max-width: 575px) {
   .home-wrapper .main-container .message-wrapper .bg-color .container .row .col .main-wrapper .message .content h6 {
@@ -3560,13 +3563,37 @@ a {
   padding: 3rem 1rem;
   margin-top: 0.4rem;
 }
-.course .main-container .course-wrapper .container .row .col .main-wrapper {
+.course .main-container .course-wrapper .container .row .col1 .main-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.course .main-container .course-wrapper .container .row .col .main-wrapper .vision ul, .course .main-container .course-wrapper .container .row .col .main-wrapper .vision ol, .course .main-container .course-wrapper .container .row .col .main-wrapper .mission ul, .course .main-container .course-wrapper .container .row .col .main-wrapper .mission ol {
-  margin-left: 2rem;
+.course .main-container .course-wrapper .container .row .col1 .main-wrapper .college p {
+  margin-top: 1rem;
+  text-align: justify;
+  padding: 0 0.3rem;
+}
+.course .main-container .course-wrapper .container .row .col2 .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.course .main-container .course-wrapper .container .row .col2 .main-wrapper .image {
+  width: 100%;
+}
+.course .main-container .course-wrapper .container .row .col2 .main-wrapper .image img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.course .main-container .course-wrapper .container .row .col3 {
+  margin-top: 2rem;
+}
+.course .main-container .course-wrapper .container .row .col3 .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .course .main-container footer {
   width: 100%;
@@ -3904,17 +3931,51 @@ a {
   border-radius: 0.5rem;
   background-color: #006498;
 }
-.downloads .main-container .course-wrapper {
-  padding: 3rem 1rem;
-  margin-top: 0.4rem;
+.downloads .main-container .faq {
+  margin-bottom: 2rem;
 }
-.downloads .main-container .course-wrapper .container .row .col .main-wrapper {
+.downloads .main-container .faq .main-wrapper .container .row1 {
+  padding: 1rem 0rem;
+  padding-top: 2rem;
+}
+.downloads .main-container .faq .main-wrapper .container .row1 .col .wrapper p {
+  font-size: 1.1rem;
+}
+.downloads .main-container .faq .main-wrapper .container .row1 .col .wrapper p span {
+  font-weight: 500;
+}
+.downloads .main-container .faq .main-wrapper .container .row2 .col .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 767px) {
+  .downloads .main-container .faq .main-wrapper .container .row2 .col .wrapper {
+    flex-wrap: wrap;
+  }
+}
+.downloads .main-container .faq .main-wrapper .container .row2 .col .wrapper .button.active {
+  background-color: #df0000;
+}
+.downloads .main-container .faq .main-wrapper .container .row3 {
+  margin-top: 2rem;
+}
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container {
+  margin-top: 10px;
+}
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.downloads .main-container .course-wrapper .container .row .col .main-wrapper .vision ul, .downloads .main-container .course-wrapper .container .row .col .main-wrapper .vision ol, .downloads .main-container .course-wrapper .container .row .col .main-wrapper .mission ul, .downloads .main-container .course-wrapper .container .row .col .main-wrapper .mission ol {
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul, .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol {
   margin-left: 2rem;
+}
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul li.eligible, .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol li.eligible {
+  font-weight: 600;
+}
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data {
+  display: none;
 }
 .downloads .main-container footer {
   width: 100%;
