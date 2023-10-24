@@ -5945,9 +5945,23 @@ a {
 
                                 span{
 
+                                    .image{
+                                        display: flex;
+                                        justify-content: center;
+
+                                        img{
+
+                                        }
+                                    }
+
+                                    p{
+                                        margin-left: .5rem;
+                                    }
+
                                     h4.professional-heading{
                                         margin-top: 1rem;
                                         margin-bottom: 1rem;
+                                        margin-left: .5rem;
                                     }
 
                                 }
@@ -5962,6 +5976,18 @@ a {
 
                         @media (max-width: 767px){
                             margin-top: 1.5rem;
+                        }
+
+                        h2{
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            margin-bottom: 2rem;
+
+                            @media (max-width: 767px){
+                                margin-top: 1rem;
+                                font-size: 1.3rem;
+                            }
+
                         }
 
                         .main-wrapper{

@@ -3630,9 +3630,17 @@ a {
     font-size: 1.3rem;
   }
 }
+.course .main-container .course-wrapper .container .row .col3 .main-wrapper .college span .image {
+  display: flex;
+  justify-content: center;
+}
+.course .main-container .course-wrapper .container .row .col3 .main-wrapper .college span p {
+  margin-left: 0.5rem;
+}
 .course .main-container .course-wrapper .container .row .col3 .main-wrapper .college span h4.professional-heading {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 0.5rem;
 }
 .course .main-container .course-wrapper .container .row .col4 {
   margin-top: 3rem;
@@ -3640,6 +3648,17 @@ a {
 @media (max-width: 767px) {
   .course .main-container .course-wrapper .container .row .col4 {
     margin-top: 1.5rem;
+  }
+}
+.course .main-container .course-wrapper .container .row .col4 h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .course .main-container .course-wrapper .container .row .col4 h2 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
   }
 }
 .course .main-container .course-wrapper .container .row .col4 .main-wrapper {
