@@ -3573,10 +3573,23 @@ a {
   padding: 3rem 1rem;
   margin-top: 0.4rem;
 }
+.course .main-container .course-wrapper .container .row {
+  display: flex;
+  align-items: center;
+}
 .course .main-container .course-wrapper .container .row .col1 .main-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.course .main-container .course-wrapper .container .row .col1 .main-wrapper .college h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .course .main-container .course-wrapper .container .row .col1 .main-wrapper .college h3 {
+    font-size: 1.4rem;
+  }
 }
 .course .main-container .course-wrapper .container .row .col1 .main-wrapper .college p {
   margin-top: 1rem;
@@ -3592,6 +3605,7 @@ a {
   width: 100%;
 }
 .course .main-container .course-wrapper .container .row .col2 .main-wrapper .image img {
+  box-shadow: 1px 1px 20px 1px rgba(34, 34, 34, 0.1725490196);
   height: 30rem;
   width: 100%;
   object-fit: cover;
@@ -3604,6 +3618,59 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.course .main-container .course-wrapper .container .row .col3 .main-wrapper .college h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .course .main-container .course-wrapper .container .row .col3 .main-wrapper .college h2 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+.course .main-container .course-wrapper .container .row .col3 .main-wrapper .college span h4.professional-heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.course .main-container .course-wrapper .container .row .col4 {
+  margin-top: 3rem;
+}
+@media (max-width: 767px) {
+  .course .main-container .course-wrapper .container .row .col4 {
+    margin-top: 1.5rem;
+  }
+}
+.course .main-container .course-wrapper .container .row .col4 .main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 767px) {
+  .course .main-container .course-wrapper .container .row .col4 .main-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.course .main-container .course-wrapper .container .row .col4 .main-wrapper .image {
+  width: 31%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .course .main-container .course-wrapper .container .row .col4 .main-wrapper .image {
+    width: 100%;
+  }
+}
+.course .main-container .course-wrapper .container .row .col4 .main-wrapper .image img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 .course .main-container footer {
   width: 100%;
