@@ -1742,13 +1742,24 @@ a {
 .admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 0.2rem;
 }
-.admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul, .admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol {
-  margin-left: 2rem;
+.admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn {
+  border-radius: 20px;
+  padding: 0.55rem 1.5rem;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #003B84;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  box-shadow: none !important;
 }
-.admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul li.eligible, .admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol li.eligible {
-  font-weight: 600;
+.admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn:hover {
+  color: #fff;
+  background-color: #004ead;
 }
 .admissions-criteria .main-container .faq .main-wrapper .container .row3 .col .wrapper .data {
   display: none;
@@ -2124,13 +2135,24 @@ a {
 .fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 0.2rem;
 }
-.fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul, .fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol {
-  margin-left: 2rem;
+.fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn {
+  border-radius: 20px;
+  padding: 0.55rem 1.5rem;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #003B84;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  box-shadow: none !important;
 }
-.fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul li.eligible, .fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol li.eligible, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul li.eligible, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol li.eligible, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul li.eligible, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol li.eligible {
-  font-weight: 600;
+.fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn:hover, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn:hover, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn:hover {
+  color: #fff;
+  background-color: #004ead;
 }
 .fee-structure .main-container .faq .main-wrapper .container .row3 .col .wrapper .data, .merit-lists .main-container .faq .main-wrapper .container .row3 .col .wrapper .data, .apply-now .main-container .faq .main-wrapper .container .row3 .col .wrapper .data {
   display: none;
@@ -2478,9 +2500,26 @@ a {
 .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
-.vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .vision ul, .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .vision ol, .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mission ul, .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mission ol {
+.vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.3137254902);
+}
+.vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs h2 {
+  font-weight: 600;
+  font-size: 2.1rem;
+  margin-bottom: 0.6rem;
+}
+@media (max-width: 767px) {
+  .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs h2 {
+    font-size: 1.7rem;
+  }
+}
+.vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs .vision ul, .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs .vision ol, .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs .mission ul, .vision-mission .main-container .vision-mission-wrapper .container .row .col .main-wrapper .mbbs .mission ol {
   margin-left: 2rem;
 }
 .vision-mission .main-container footer {
