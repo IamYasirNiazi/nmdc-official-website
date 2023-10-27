@@ -205,6 +205,10 @@ a {
     display: block !important;
 }
 
+.menu-active{
+    display: flex !important;
+}
+
 
 .btn {
     border-radius: 20px;
@@ -2101,6 +2105,7 @@ a {
 }
 */
 
+
 .home-wrapper{
 
     .main-container{
@@ -2258,40 +2263,83 @@ a {
                                 }
 
                                 li.about-menu{
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
-                                        .about-submenu{
-                                            display: flex !important;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
+
+                                    @media (max-width:767px){
+    
+                                        .about-submenu{
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
+                                    }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -4494,7 +4542,6 @@ a {
     }
 }
 */
-
 
 
 .admissions-criteria{

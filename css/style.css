@@ -113,6 +113,10 @@ a {
   display: block !important;
 }
 
+.menu-active {
+  display: flex !important;
+}
+
 .btn {
   border-radius: 20px;
   padding: 0.5rem 1.5rem;
@@ -2113,26 +2117,50 @@ a {
     gap: 1.5rem;
   }
 }
-.home-wrapper .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (min-width: 768px) {
+  .home-wrapper .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .home-wrapper .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.home-wrapper .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .home-wrapper .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    display: none;
+    position: static !important;
+  }
 }
-.home-wrapper .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (min-width: 768px) {
+  .home-wrapper .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .home-wrapper .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.home-wrapper .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .home-wrapper .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    display: none;
+    position: static !important;
+  }
 }
-.home-wrapper .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (min-width: 768px) {
+  .home-wrapper .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .home-wrapper .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.home-wrapper .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .home-wrapper .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    display: none;
+    position: static !important;
+  }
 }
 .home-wrapper .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
