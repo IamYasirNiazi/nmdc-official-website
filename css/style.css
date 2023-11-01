@@ -6534,21 +6534,58 @@ a {
   background-color: #df0000;
 }
 .downloads .main-container .faq .main-wrapper .container .row3 {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container {
   margin-top: 10px;
 }
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container h5 {
+  margin-bottom: 1.7rem;
+}
 .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 0.2rem;
 }
-.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul, .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol {
-  margin-left: 2rem;
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn {
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  outline: none;
+  background-color: #003B84;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  box-shadow: none !important;
 }
-.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ul li.eligible, .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper div ol li.eligible {
-  font-weight: 600;
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .download-btn:hover {
+  color: #fff;
+  background-color: #004ead;
+}
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 65%;
+}
+@media (max-width: 767px) {
+  .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .lists {
+    width: 100%;
+  }
+}
+.downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .lists .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data-container .main-wrapper .lists .list {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .downloads .main-container .faq .main-wrapper .container .row3 .col .wrapper .data {
   display: none;
