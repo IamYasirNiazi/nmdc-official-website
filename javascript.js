@@ -147,6 +147,54 @@ $(document).ready(function () {
   });
 });
 
+// News Carousel Code
+$(document).ready(function () {
+  $("#affiliation-slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav:false,
+    center: true,
+    stagePadding: 0,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    // navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
+    smartSpeed: 1000,
+    autoplayHoverPause: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 0,
+        // dots: false,
+        // nav: true
+      },
+      575: {
+        items: 2,
+        stagePadding: 0,
+      },
+      768: {
+        items: 3,
+        stagePadding: 0,
+      },
+      992: {
+        items: 5,
+        stagePadding: 0,
+      },
+
+      1200: {
+        items: 5,
+        stagePadding: 0,
+      },
+
+      1400: {
+        items: 6,
+        stagePadding: 0,
+      },
+    },
+  });
+});
+
 // Carousel Message Slider Code
 $(document).ready(function () {
   $("#messageSlider").owlCarousel({
