@@ -82,7 +82,7 @@ $(document).ready(function () {
         stagePadding: 0,
       },
       992: {
-        items: 4,
+        items: 3,
         stagePadding: 0,
       },
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
         stagePadding: 0,
       },
       992: {
-        items: 4,
+        items: 3,
         stagePadding: 0,
       },
 
@@ -147,7 +147,7 @@ $(document).ready(function () {
   });
 });
 
-// News Carousel Code
+// Affiliation Carousel Code
 $(document).ready(function () {
   $("#affiliation-slider").owlCarousel({
     loop: true,

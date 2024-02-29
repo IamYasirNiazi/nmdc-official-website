@@ -137,9 +137,13 @@
                   <ul>
                     <li class="active"><a href="/index.html">HOME</a></li>
 
-                    <li class="about-menu">
+                    <li
+                      class="about-menu"
+                      id="about-menu"
+                      onclick="aboutList()"
+                    >
                       <a class="arrow">ABOUT</a>
-                      <ul class="about-submenu">
+                      <ul class="about-submenu" id="about-submenu">
                         <li>
                           <a href="vision-and-mission.html">Vision & Mission</a>
                         </li>
@@ -954,176 +958,229 @@
             <div class="row row2">
               <div class="col col1 col-12">
                 <div id="news-slider" class="owl-carousel owl-theme">
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img
-                        src="/images/news/nursing-seats.png"
-                        class="img-fluid"
-                        alt=""
-                      />
+                  <a href="images/news/nursing-seats.png" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/nursing-seats.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Feb 01, 2024</span></span
+                        >
+                        <h2>Admissions Open</h2>
+                        <p>Admissions Open for 2023-24 in Nursing.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Feb 01, 2024</span></span
-                      >
-                      <h2>Admissions Open</h2>
-                      <p>Admissions Open for 2023-24 in Nursing.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
+                  </a>
+                  <a href="images/news/mbbs.png" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/mbbs.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Dec 15, 2023</span></span
+                        >
+                        <h2>Admissions Open</h2>
+                        <p>Admissions Open for 2023-24 in MBBS.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img
-                        src="/images/news/mbbs.png"
-                        class="img-fluid"
-                        alt=""
-                      />
+                  </a>
+                  <a href="images/news/1.webp" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/1.webp"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>SEP 15, 2023</span></span
+                        >
+                        <h2>Admissions Open</h2>
+                        <p>
+                          Admissions Open for 2023-24 in MBBS, BDS, DPT &
+                          Pharm-D.
+                        </p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Dec 15, 2023</span></span
-                      >
-                      <h2>Admissions Open</h2>
-                      <p>Admissions Open for 2023-24 in MBBS.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
+                  </a>
+                  <a href="images/news/2.png" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/2.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>DPT Admissions</h2>
+                        <p>Admissions Open for 2023-24 in DPT.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/1.webp" class="img-fluid" alt="" />
+                  </a>
+                  <a href="images/news/3.png" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/3.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>Pharm-D Admissions</h2>
+                        <p>Admissions Open for 2023-24 in Pharm-D.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>SEP 15, 2023</span></span
-                      >
-                      <h2>Admissions Open</h2>
-                      <p>
-                        Admissions Open for 2023-24 in MBBS, BDS, DPT & Pharm-D.
-                      </p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
+                  </a>
+                  <a href="images/news/4.jpg" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/4.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>MBBS Admissions</h2>
+                        <p>Admissions Open for 2023-24 in MBBS.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/2.png" class="img-fluid" alt="" />
+                  </a>
+                  <a href="images/news/5.jpg" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/5.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>BDS Admissions</h2>
+                        <p>Admissions Open for 2023-24 in BDS.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>DPT Admissions</h2>
-                      <p>Admissions Open for 2023-24 in DPT.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
+                  </a>
+                  <a href="images/news/6.jpg" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/6.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>DPT Admissions</h2>
+                        <p>Admissions Open for 2023-24 in DPT.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/3.png" class="img-fluid" alt="" />
+                  </a>
+                  <a href="images/news/7.jpg" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/7.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>Pharm-D Admissions</h2>
+                        <p>Admissions Open for 2023-24 in Pharm-D.</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>Pharm-D Admissions</h2>
-                      <p>Admissions Open for 2023-24 in Pharm-D.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
+                  </a>
+                  <a href="images/news/8.jpg" target="_self">
+                    <div class="main-wrapper" data-aos="fade-up">
+                      <div class="image">
+                        <img
+                          src="/images/news/8.jpg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="content">
+                        <span class="date"
+                          ><i class="ri-calendar-line"></i
+                          ><span>Sep 15, 2023</span></span
+                        >
+                        <h2>Nursing Admissions</h2>
+                        <p>Nursing Admissions Open for 2023-24</p>
+                        <!-- <a href="/mbbs.html" class="btn"
+                          >Read more <i class="ri-arrow-right-line"></i
+                        ></a> -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/4.jpg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>MBBS Admissions</h2>
-                      <p>Admissions Open for 2023-24 in MBBS.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
-                    </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/5.jpg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>BDS Admissions</h2>
-                      <p>Admissions Open for 2023-24 in BDS.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
-                    </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/6.jpg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>DPT Admissions</h2>
-                      <p>Admissions Open for 2023-24 in DPT.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
-                    </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/7.jpg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>Pharm-D Admissions</h2>
-                      <p>Admissions Open for 2023-24 in Pharm-D.</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
-                    </div>
-                  </div>
-                  <div class="main-wrapper" data-aos="fade-up">
-                    <div class="image">
-                      <img src="/images/news/8.jpg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="content">
-                      <span class="date"
-                        ><i class="ri-calendar-line"></i
-                        ><span>Sep 15, 2023</span></span
-                      >
-                      <h2>Nursing Admissions</h2>
-                      <p>Nursing Admissions Open for 2023-24</p>
-                      <!-- <a href="/mbbs.html" class="btn"
-                        >Read more <i class="ri-arrow-right-line"></i
-                      ></a> -->
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1649,6 +1706,20 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const about_menu = document.getElementById("about-menu");
+      const about_submenu = document.getElementById("about-submenu");
+
+      const about_menu = document.getElementById("about-menu");
+      const about_submenu = document.getElementById("about-submenu");
+
+      const about_menu = document.getElementById("about-menu");
+      const about_submenu = document.getElementById("about-submenu");
+
+      function aboutList() {
+        about_submenu.classList.toggle("submenu-active");
+      }
     </script>
   </body>
 </html>
