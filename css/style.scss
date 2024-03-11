@@ -2171,7 +2171,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -2412,6 +2412,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -3268,7 +3269,7 @@ a {
 
         .colleges{
             padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding-bottom: 3rem;
 
             @media (min-width: 768px) and (max-width: 991px){
                 padding-top: 3rem;
@@ -3866,7 +3867,7 @@ a {
 
         .gallery{
             padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding-bottom: 2.7rem;
             // background-color: #F0F9FD;
             // background: rgb(228,247,255);
             // background: linear-gradient(90deg, rgba(228,247,255,1) 0%, rgba(246,252,255,1) 100%);
@@ -3901,6 +3902,7 @@ a {
 
                 .row2{
                     margin-top: 2.5rem;
+                    margin-bottom: .5rem;
 
                     .main-wrapper{
                         display: grid;
@@ -3996,6 +3998,10 @@ a {
 
 
                     }
+                }
+
+                .row3{
+                    margin-top: 1.8rem;
                 }
             }
 
@@ -4281,9 +4287,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -5008,49 +5015,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -5108,6 +5153,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -5487,9 +5533,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -5666,49 +5713,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -5766,6 +5851,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -6125,9 +6211,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -6304,49 +6391,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -6404,6 +6529,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -6683,9 +6809,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -6862,49 +6989,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -6962,6 +7127,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -7257,9 +7423,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -7435,49 +7602,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -7535,6 +7740,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -7849,9 +8055,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -8027,49 +8234,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -8127,6 +8372,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -8512,9 +8758,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -8690,49 +8937,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -8790,6 +9075,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -9177,9 +9463,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{
@@ -9355,49 +9642,87 @@ a {
                                     gap: 1.5rem;
                                 }
 
-
                                 li.about-menu{
 
-                                    ul{
-                                        li.active{
-                                            color: #003B84;
-                                            font-weight: 500;
+                                    @media (min-width:768px){
+                                        
+                                        &:hover{
+    
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+    
+                                            .about-submenu{
+                                                display: flex !important;
+                                            }
                                         }
                                     }
-                                    
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
-
+                                    @media (max-width:767px){
+    
                                         .about-submenu{
-                                            display: flex !important;
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
                                         }
+                                        
                                     }
+
+                                    
                                 }
                                 
                                 li.admissions-menu{
-                                    &:hover{
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                    @media (min-width:768px){
 
-                                        .admissions-submenu{
-                                            display: flex !important;
+                                        &:hover{
+
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .admissions-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .admissions-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
                                     
 
                                 li.departments-menu{
-                                    &:hover{
+                                    
+                                    @media (min-width:768px){
 
-                                        border-bottom: 2px solid #004ead;
-                                        transition: all .2s ease-in;
+                                        &:hover{
 
-                                        .departments-submenu{
-                                            display: flex !important;
+                                            border-bottom: 2px solid #004ead;
+                                            transition: all .2s ease-in;
+
+                                            .departments-submenu{
+                                                display: flex !important;
+                                            }
                                         }
+                                    }
+
+                                    @media (max-width:767px){
+    
+                                        .departments-submenu{
+                                            margin-top: 1rem;
+                                            display: none;
+                                            // display: flex !important;
+                                            position: static !important;
+                                        }
+                                        
                                     }
                                 }
 
@@ -9455,6 +9780,7 @@ a {
                             z-index: 100;
                             font-size: 1.3rem;
                             padding: 0.15rem 0.45rem;
+                            margin-right: .6rem;
                             border-radius: 0.3rem;
                             border: 1px solid rgba(34, 34, 34, 0.5215686275);
                             // flex-grow: 1;
@@ -9841,9 +10167,10 @@ a {
                                     padding: 0;
                                     margin: 0;
                                     text-align: center;
+                                    font-size: .85rem;
 
                                     @media (max-width: 575px){
-                                        font-size: .8rem;
+                                        font-size: .75rem;
                                     }
 
                                     a{

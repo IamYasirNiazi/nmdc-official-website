@@ -2032,9 +2032,6 @@ a {
   position: relative;
   z-index: 20;
 }
-.home-wrapper .main-container header .container .row {
-  width: 100%;
-}
 .home-wrapper .main-container header .container .row .col {
   width: 100%;
   display: flex;
@@ -2210,6 +2207,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -2841,7 +2839,7 @@ a {
 }
 .home-wrapper .main-container .colleges {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .home-wrapper .main-container .colleges {
@@ -3281,7 +3279,7 @@ a {
 }
 .home-wrapper .main-container .gallery {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2.7rem;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .home-wrapper .main-container .gallery {
@@ -3305,6 +3303,7 @@ a {
 }
 .home-wrapper .main-container .gallery .container .row2 {
   margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 .home-wrapper .main-container .gallery .container .row2 .main-wrapper {
   display: grid;
@@ -3383,6 +3382,9 @@ a {
   border-bottom-right-radius: 1rem;
   height: 100%;
   object-fit: cover;
+}
+.home-wrapper .main-container .gallery .container .row3 {
+  margin-top: 1.8rem;
 }
 .home-wrapper .main-container .message-wrapper {
   background-image: url(/images/message-bg.jpg);
@@ -3582,10 +3584,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .home-wrapper .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .home-wrapper .main-container footer .copyright .container .row .col .wrapper p a {
@@ -4260,30 +4263,53 @@ a {
     gap: 1.5rem;
   }
 }
-.admissions-criteria .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .admissions-criteria .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .admissions-criteria .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.admissions-criteria .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .admissions-criteria .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.admissions-criteria .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .admissions-criteria .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .admissions-criteria .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.admissions-criteria .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .admissions-criteria .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.admissions-criteria .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .admissions-criteria .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .admissions-criteria .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.admissions-criteria .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.admissions-criteria .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .admissions-criteria .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .admissions-criteria .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -4324,6 +4350,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -4520,10 +4547,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .admissions-criteria .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .admissions-criteria .main-container footer .copyright .container .row .col .wrapper p a {
@@ -4653,30 +4681,53 @@ a {
     gap: 1.5rem;
   }
 }
-.fee-structure .main-container header .container .row .col nav ul li.about-menu ul li.active, .merit-lists .main-container header .container .row .col nav ul li.about-menu ul li.active, .apply-now .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .fee-structure .main-container header .container .row .col nav ul li.about-menu:hover, .merit-lists .main-container header .container .row .col nav ul li.about-menu:hover, .apply-now .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .fee-structure .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu, .merit-lists .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu, .apply-now .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.fee-structure .main-container header .container .row .col nav ul li.about-menu:hover, .merit-lists .main-container header .container .row .col nav ul li.about-menu:hover, .apply-now .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .fee-structure .main-container header .container .row .col nav ul li.about-menu .about-submenu, .merit-lists .main-container header .container .row .col nav ul li.about-menu .about-submenu, .apply-now .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.fee-structure .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu, .merit-lists .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu, .apply-now .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .fee-structure .main-container header .container .row .col nav ul li.admissions-menu:hover, .merit-lists .main-container header .container .row .col nav ul li.admissions-menu:hover, .apply-now .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .fee-structure .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu, .merit-lists .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu, .apply-now .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.fee-structure .main-container header .container .row .col nav ul li.admissions-menu:hover, .merit-lists .main-container header .container .row .col nav ul li.admissions-menu:hover, .apply-now .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .fee-structure .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu, .merit-lists .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu, .apply-now .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.fee-structure .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu, .merit-lists .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu, .apply-now .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .fee-structure .main-container header .container .row .col nav ul li.departments-menu:hover, .merit-lists .main-container header .container .row .col nav ul li.departments-menu:hover, .apply-now .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .fee-structure .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu, .merit-lists .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu, .apply-now .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.fee-structure .main-container header .container .row .col nav ul li.departments-menu:hover, .merit-lists .main-container header .container .row .col nav ul li.departments-menu:hover, .apply-now .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.fee-structure .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu, .merit-lists .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu, .apply-now .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .fee-structure .main-container header .container .row .col nav ul li.departments-menu .departments-submenu, .merit-lists .main-container header .container .row .col nav ul li.departments-menu .departments-submenu, .apply-now .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .fee-structure .main-container header .container .row .col nav ul li, .merit-lists .main-container header .container .row .col nav ul li, .apply-now .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -4717,6 +4768,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -4913,10 +4965,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .fee-structure .main-container footer .copyright .container .row .col .wrapper p, .merit-lists .main-container footer .copyright .container .row .col .wrapper p, .apply-now .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .fee-structure .main-container footer .copyright .container .row .col .wrapper p a, .merit-lists .main-container footer .copyright .container .row .col .wrapper p a, .apply-now .main-container footer .copyright .container .row .col .wrapper p a {
@@ -5046,30 +5099,53 @@ a {
     gap: 1.5rem;
   }
 }
-.vision-mission .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .vision-mission .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .vision-mission .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.vision-mission .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .vision-mission .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.vision-mission .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .vision-mission .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .vision-mission .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.vision-mission .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .vision-mission .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.vision-mission .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .vision-mission .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .vision-mission .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.vision-mission .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.vision-mission .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .vision-mission .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .vision-mission .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -5110,6 +5186,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -5278,10 +5355,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .vision-mission .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .vision-mission .main-container footer .copyright .container .row .col .wrapper p a {
@@ -5411,30 +5489,53 @@ a {
     gap: 1.5rem;
   }
 }
-.standing-committee-msg .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .standing-committee-msg .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .standing-committee-msg .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.standing-committee-msg .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .standing-committee-msg .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.standing-committee-msg .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .standing-committee-msg .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .standing-committee-msg .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.standing-committee-msg .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .standing-committee-msg .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.standing-committee-msg .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .standing-committee-msg .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .standing-committee-msg .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.standing-committee-msg .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.standing-committee-msg .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .standing-committee-msg .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .standing-committee-msg .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -5475,6 +5576,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -5648,10 +5750,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .standing-committee-msg .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .standing-committee-msg .main-container footer .copyright .container .row .col .wrapper p a {
@@ -5781,30 +5884,53 @@ a {
     gap: 1.5rem;
   }
 }
-.contact-us .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .contact-us .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .contact-us .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.contact-us .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .contact-us .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.contact-us .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .contact-us .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .contact-us .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.contact-us .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .contact-us .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.contact-us .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .contact-us .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .contact-us .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.contact-us .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.contact-us .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .contact-us .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .contact-us .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -5845,6 +5971,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -6034,10 +6161,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .contact-us .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .contact-us .main-container footer .copyright .container .row .col .wrapper p a {
@@ -6167,30 +6295,53 @@ a {
     gap: 1.5rem;
   }
 }
-.course .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .course .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .course .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.course .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.course .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .course .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .course .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.course .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.course .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .course .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .course .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.course .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.course .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .course .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .course .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -6231,6 +6382,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -6492,10 +6644,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .course .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .course .main-container footer .copyright .container .row .col .wrapper p a {
@@ -6625,30 +6778,53 @@ a {
     gap: 1.5rem;
   }
 }
-.downloads .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .downloads .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .downloads .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.downloads .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.downloads .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .downloads .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .downloads .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.downloads .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.downloads .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .downloads .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .downloads .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.downloads .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.downloads .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .downloads .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .downloads .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -6689,6 +6865,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -6911,10 +7088,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .downloads .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .downloads .main-container footer .copyright .container .row .col .wrapper p a {
@@ -7044,30 +7222,53 @@ a {
     gap: 1.5rem;
   }
 }
-.latest-advertisement .main-container header .container .row .col nav ul li.about-menu ul li.active {
-  color: #003B84;
-  font-weight: 500;
+@media (min-width: 768px) {
+  .latest-advertisement .main-container header .container .row .col nav ul li.about-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .latest-advertisement .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
+    display: flex !important;
+  }
 }
-.latest-advertisement .main-container header .container .row .col nav ul li.about-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .latest-advertisement .main-container header .container .row .col nav ul li.about-menu .about-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.latest-advertisement .main-container header .container .row .col nav ul li.about-menu:hover .about-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .latest-advertisement .main-container header .container .row .col nav ul li.admissions-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .latest-advertisement .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
+    display: flex !important;
+  }
 }
-.latest-advertisement .main-container header .container .row .col nav ul li.admissions-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
+@media (max-width: 767px) {
+  .latest-advertisement .main-container header .container .row .col nav ul li.admissions-menu .admissions-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
-.latest-advertisement .main-container header .container .row .col nav ul li.admissions-menu:hover .admissions-submenu {
-  display: flex !important;
+@media (min-width: 768px) {
+  .latest-advertisement .main-container header .container .row .col nav ul li.departments-menu:hover {
+    border-bottom: 2px solid #004ead;
+    transition: all 0.2s ease-in;
+  }
+  .latest-advertisement .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
+    display: flex !important;
+  }
 }
-.latest-advertisement .main-container header .container .row .col nav ul li.departments-menu:hover {
-  border-bottom: 2px solid #004ead;
-  transition: all 0.2s ease-in;
-}
-.latest-advertisement .main-container header .container .row .col nav ul li.departments-menu:hover .departments-submenu {
-  display: flex !important;
+@media (max-width: 767px) {
+  .latest-advertisement .main-container header .container .row .col nav ul li.departments-menu .departments-submenu {
+    margin-top: 1rem;
+    display: none;
+    position: static !important;
+  }
 }
 .latest-advertisement .main-container header .container .row .col nav ul li {
   border-bottom: 2px solid transparent;
@@ -7108,6 +7309,7 @@ a {
   z-index: 100;
   font-size: 1.3rem;
   padding: 0.15rem 0.45rem;
+  margin-right: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid rgba(34, 34, 34, 0.5215686275);
 }
@@ -7361,10 +7563,11 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 575px) {
   .latest-advertisement .main-container footer .copyright .container .row .col .wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .latest-advertisement .main-container footer .copyright .container .row .col .wrapper p a {
