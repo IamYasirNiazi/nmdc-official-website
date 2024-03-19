@@ -13,7 +13,7 @@ $(document).ready(function () {
     stagePadding: 0,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
     // navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
     smartSpeed: 1000,
     autoplayHoverPause: false,
@@ -61,7 +61,7 @@ $(document).ready(function () {
     stagePadding: 0,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 2000,
     // navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
     smartSpeed: 1000,
     autoplayHoverPause: true,
@@ -109,7 +109,7 @@ $(document).ready(function () {
     stagePadding: 0,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 2000,
     // navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
     smartSpeed: 1000,
     autoplayHoverPause: true,
@@ -157,10 +157,10 @@ $(document).ready(function () {
     stagePadding: 0,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 2000,
     // navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
     smartSpeed: 1000,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     responsiveClass: true,
     responsive: {
       0: {
@@ -197,7 +197,8 @@ $(document).ready(function () {
 
 // Carousel Message Slider Code
 $(document).ready(function () {
-  $("#messageSlider").owlCarousel({
+  // $("#messageSlider").owlCarousel({
+  $("").owlCarousel({
     loop: true,
     margin: 30,
      nav:false,
@@ -205,7 +206,7 @@ $(document).ready(function () {
     stagePadding: 0,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
     // navText: ["<i class='ri-arrow-left-s-line'></i>", "<i class='ri-arrow-right-s-line'></i>"],
     smartSpeed: 1000,
     autoplayHoverPause: false,
@@ -264,3 +265,28 @@ const nav = document.getElementById("navigation");
 nav.addEventListener("click", function (event) {
   event.stopPropagation();
 });
+
+
+
+const about_menu = document.getElementById("about-menu");
+const about_submenu = document.getElementById("about-submenu");
+
+const admissions_menu = document.getElementById("admissions-menu");
+const admissions_submenu = document.getElementById("admissions-submenu");
+
+const departments_menu = document.getElementById("departments-menu");
+const departments_submenu = document.getElementById(
+  "departments-submenu"
+);
+
+function aboutList() {
+  about_submenu.classList.toggle("submenu-active");
+}
+
+function deptList() {
+  departments_submenu.classList.toggle("submenu-active");
+}
+
+function admissionList() {
+  admissions_submenu.classList.toggle("submenu-active");
+}

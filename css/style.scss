@@ -3268,7 +3268,7 @@ a {
         }
 
         .colleges{
-            padding-top: 4rem;
+            padding-top: 1rem;
             padding-bottom: 3rem;
 
             @media (min-width: 768px) and (max-width: 991px){
@@ -3476,7 +3476,8 @@ a {
 
                         .main-wrapper{
                             display: flex;
-                            align-items: center;
+                            flex-direction: column;
+                            // align-items: center;
                             gap: 1rem;
                             border: 1px solid #ffffff2f;
                             border-radius: 5px;
@@ -3503,7 +3504,7 @@ a {
                             }
 
                             .content{
-                                padding: 0 .6rem;
+                                padding: 0 .7rem;
                                 // padding-bottom: 1rem;
                                 // text-align: center;
                                 flex: 1;
@@ -3513,20 +3514,23 @@ a {
                                 }
 
                                 h2{
-                                    font-size: 1.1rem;
+                                    font-size: 1rem;
                                     font-weight: 500;
                                     color: #fff;
+                                    margin-top: .2rem;
+                                    margin-bottom: .5rem;
                                     // padding: .3rem 0;
 
                                     @media (max-width: 767px){
-                                        font-size: 1rem;
+                                        font-size: .95rem;
                                     }
                                 }
 
                                 div{
                                     display: flex;
                                     align-items: flex-start;
-                                    gap: .3rem;
+                                    gap: .4rem;
+                                    margin-bottom: .9rem;
 
                                     i{
                                         padding: 0;
@@ -3720,15 +3724,21 @@ a {
 
         .events{
             padding-top: 4rem;
-            padding-bottom: 2.5rem;
-            background: rgb(0,100,152);
-            background: linear-gradient(0deg, rgba(0,100,152,1) 0%, rgb(0, 117, 180) 100%);
-            width: 100%;
+            padding-bottom: 3rem;
+            // background: rgb(0,100,152);
+            // background: linear-gradient(0deg, rgba(0,100,152,1) 0%, rgb(0, 117, 180) 100%);
+            // width: 100%;
 
             @media (min-width: 768px) and (max-width: 991px){
                 padding-top: 3rem;
             }
-            
+
+            @media (max-width: 575px){
+                margin-top: 0;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
             .container{
                 display: flex;
                 flex-direction: column;
@@ -3740,13 +3750,13 @@ a {
 
                         h2{
                             text-align: center;
-                            color: #fff;
+                            // color: #fff;
 
                             .divider {
                                 width: 150px;
                                 height: 5px;
                                 // background: #003B84;
-                                background: #fff;
+                                background: #003B84;
                                 margin: auto;
                                 border-radius: 20px;
                             }
@@ -3774,7 +3784,7 @@ a {
                                 flex-direction: column;
                                 align-items: flex-start;
                                 gap: 1rem;
-                                border: 1px solid #ffffff2f;
+                                border: 1px solid #0000002f;
                                 border-radius: 5px;
                                 box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.035);
     
@@ -3799,6 +3809,7 @@ a {
                                     flex-direction: column;
                                     align-items: flex-start;
                                     gap: .5rem;
+                                    color: #222;
                                     // text-align: center;
                                     
                                     .date{
@@ -3808,12 +3819,12 @@ a {
                                         gap: .5rem;
     
                                         i{
-                                            color: #fff;
+                                            // color: #fff;
                                             font-size: .87rem;
                                         }
     
                                         span{
-                                            color: #fff;
+                                            // color: #fff;
                                             font-size: .87rem;
                                         }
                                     }
@@ -3824,19 +3835,19 @@ a {
                                         // padding: .4rem 0;
                                         // margin-top: .4rem;
                                         margin-bottom: -.2rem;
-                                        color: #fff;
+                                        // color: #fff;
                                     }
     
                                     p{
                                         padding: 0;
                                         margin: 0;
                                         font-size: .86rem;
-                                        color: #ffffffd2;
+                                        color: #000000d2;
                                     }
     
                                     a{
                                         background: none;
-                                        color: #fff;
+                                        color: #003B84;
                                         font-weight: 500;
                                         padding: .2rem;
                                         display: flex;
@@ -4008,7 +4019,7 @@ a {
         }
 
         .message-wrapper{
-            background-image: url(/images/message-bg.jpg);
+            background-image: url(/images/message-bg-new.jpg);
             background-color: #000000;
             background-repeat: no-repeat;
             background-size: cover;
@@ -4054,8 +4065,9 @@ a {
                             // border: 1px solid red;
     
                             .main-wrapper{
-                                // display: flex;
-                                // flex-direction: column;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
                                 width: 100%;
                                 // border: 1px solid #fff;
     
@@ -4067,7 +4079,7 @@ a {
                                     background-color: #fffffff2;
                                     border-radius: 1rem;
 
-                                    @media (max-width: 575px){
+                                    @media (max-width: 767px){
                                         flex-direction: column;
                                     }
     
@@ -4078,6 +4090,7 @@ a {
     
                                         img{
                                             object-fit: cover;
+                                            object-position: top;
                                             height: 17rem;
                                             width: 100%;
                                             border-top-left-radius: 1rem;
@@ -4912,7 +4925,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -5610,7 +5623,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -6288,7 +6301,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -6886,7 +6899,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -7499,7 +7512,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -8131,7 +8144,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -8845,7 +8858,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -9550,7 +9563,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -10254,7 +10267,7 @@ a {
             .container{
 
                 .row{
-                    width: 100%;
+                    // width: 100%;
 
                     .col{
                         // position: relative;
@@ -10602,6 +10615,30 @@ a {
                 }
 
                 .row2{
+                    // padding: 1rem 0rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+
+                    .col{
+
+                        .wrapper{
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+
+                            @media (max-width:767px){
+                                flex-wrap: wrap;
+                                // justify-content: center;
+                            }
+
+                            .button.active {
+                            background-color: #df0000;
+                            }
+                        }
+                    }
+                }
+
+                .row3{
                     margin-top: 2rem;
                     display: flex;
                     align-items: flex-start; 
