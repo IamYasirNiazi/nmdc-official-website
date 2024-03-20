@@ -123,6 +123,10 @@ a {
   }
 }
 
+.gallery-active {
+  display: flex !important;
+}
+
 .btn {
   border-radius: 20px;
   padding: 0.5rem 1.5rem;
@@ -7858,26 +7862,28 @@ a {
   background-color: #df0000;
 }
 .gallery .main-container .advertisement .container .row3 {
+  width: 100%;
+}
+.gallery .main-container .advertisement .container .row3 .gallery {
   margin-top: 2rem;
   display: flex;
   align-items: flex-start;
-  width: 100%;
 }
-.gallery .main-container .advertisement .container .row3 .col1 {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 {
   padding: 1rem;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
 }
 @media (max-width: 767px) {
-  .gallery .main-container .advertisement .container .row3 .col1 .posts a {
+  .gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a {
     width: 100% !important;
   }
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -7886,18 +7892,21 @@ a {
   border-radius: 5px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.035);
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .image {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .image {
   border-radius: 5px;
   width: 100%;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .image img {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .image img {
   width: 100%;
   height: 17rem;
   border-radius: 5px;
   object-fit: cover;
   object-position: center center;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .image .cover {
+  width: 25rem !important;
+}
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content {
   padding: 0 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -7906,29 +7915,29 @@ a {
   gap: 0.5rem;
   color: #222;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content .date {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content .date {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content .date i {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content .date i {
   font-size: 0.87rem;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content .date span {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content .date span {
   font-size: 0.87rem;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content h2 {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content h2 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: -0.2rem;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content p {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content p {
   padding: 0;
   margin: 0;
   font-size: 0.86rem;
   color: rgba(0, 0, 0, 0.8235294118);
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content a {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content a {
   background: none;
   color: #003B84;
   font-weight: 500;
@@ -7937,8 +7946,11 @@ a {
   align-items: center;
   gap: 0.5rem;
 }
-.gallery .main-container .advertisement .container .row3 .col1 .posts a .main-wrapper .content a i {
+.gallery .main-container .advertisement .container .row3 .gallery .col1 .posts a .main-wrapper .content a i {
   font-size: 1rem;
+}
+.gallery .main-container .advertisement .container .row3 .gallery {
+  display: none;
 }
 .gallery .main-container footer {
   width: 100%;
