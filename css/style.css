@@ -7863,6 +7863,8 @@ a {
 }
 .gallery .main-container .advertisement .container .row3 {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .gallery .main-container .advertisement .container .row3 .gallery {
   margin-top: 2rem;
