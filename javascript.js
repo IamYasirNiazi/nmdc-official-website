@@ -164,8 +164,9 @@ $(document).ready(function () {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
         stagePadding: 0,
+        center: false,
         // dots: false,
         // nav: true
       },
